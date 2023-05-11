@@ -1,0 +1,984 @@
+body {
+  font-family: "IBM Plex Sans";
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.navbar {
+  background: #ffffff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: row;
+  width: 1440px;
+  height: 72px;
+  margin: 0px auto;
+}
+.navlogo {
+  position: absolute;
+  left: 72px;
+  top: 24px;
+}
+
+.navSearch {
+  position: absolute;
+  width: 360px;
+  height: 42px;
+  left: 540px;
+  top: 16px;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.navSearch input {
+  position: absolute;
+  width: 242px;
+  height: 19px;
+  left: 50px;
+  top: 12px;
+  bottom: 11px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #5c5c5c;
+  border: none;
+  background-color: #f2f2f2;
+}
+.navSearchIcon {
+  height: 16px;
+  width: 16px;
+  left: 16px;
+  top: 12px;
+  bottom: 13.22px;
+  border-radius: 0px;
+}
+.navSpan {
+  color: #2f6ce5;
+}
+.navButton {
+  position: absolute;
+  width: 183px;
+  height: 21px;
+  left: 1161px;
+  top: 27px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: right;
+  border: none;
+  background: #ffffff;
+}
+.arrow {
+  position: absolute;
+  right: 79px;
+  top: 36px;
+  bottom: 31px;
+  left: 1351px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+}
+/* --------------Banner---------------- */
+.Banner {
+  color: #ffffff;
+  /* min-width: 1040px; */
+  justify-content: center;
+}
+.BannerImage {
+  display: flex;
+  justify-content: center;
+  width: 1440px;
+  margin: auto;
+}
+.h3Banner {
+  position: absolute;
+  width: 378px;
+  height: 47px;
+  left: 200px;
+  top: 286px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+}
+.pBanner {
+  width: 327px;
+  height: 23px;
+  left: 200px;
+  top: 337px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+/* ----------Banner------------- */
+.Posts {
+  display: flex;
+  flex-direction: column;
+  width: 100vw !important;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin:auto;   */
+  margin-top: 32px;
+  /* background-color: #02B875; */
+}
+.HeaderPosts {
+  display: flex;
+  justify-content: space-between;
+  width: 1040px;
+  margin: auto;
+  background-color: #ffffff;
+}
+.headerLine {
+  width: 1040px;
+  border: 1px solid #e0e0e0;
+  margin: auto;
+  margin-top: 20px;
+}
+.leftSide {
+  width: 358px;
+  height: 21px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.leftSide a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #8a8a8a;
+}
+.leftSide a:nth-child(2) {
+  color: #000000;
+}
+.HeaderPosts #marker {
+  position: absolute;
+  height: 1px;
+  /* width: 6%; */
+  /* left: 0; */
+  background: #000;
+  bottom: 0px;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+.postButton {
+  width: 133px;
+  height: 36px;
+  background: #edeef0;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+}
+.postButton img {
+  margin-left: 16px;
+}
+.joinButton {
+  width: 125px;
+  height: 36px;
+  background: #2f6ce5;
+  border-radius: 4px;
+  border: none;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-left: 16px;
+  border-radius: 4px;
+}
+.joinButton img {
+  margin-right: 6px;
+}
+/* --------Post------------ */
+.postContainer {
+  display: flex;
+  width: 1040px;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+.post {
+  height: 472px;
+  width: 692px;
+  margin-bottom: 16px;
+}
+.card-body {
+  color: #000000;
+}
+.withoutImageCard {
+  height: 269px;
+  margin-bottom: 98px;
+}
+.article {
+  margin-top: 0px;
+
+  height: 18px;
+  /* width: 53px; */
+}
+
+.cardheading {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  line-height: 134.17%;
+}
+.card-title {
+  width: 600px;
+  /* height: 60px; */
+  font-weight: 600;
+  font-size: 26px;
+}
+.threedots {
+  height: 25px;
+  display: flex;
+  justify-content: center;
+}
+.card-text {
+  width: 652px;
+  height: 25px;
+  font-weight: 400;
+  font-size: 19px;
+  color: #5c5c5c;
+}
+.dateAndLocation {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.dateAndLocation img {
+  margin-right: 6px;
+}
+
+.dateAndLocation .date {
+  height: 20px;
+  margin-right: 47px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.dateAndLocation .location {
+  width: 142px;
+  height: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.visitButton,
+.ApllyButton {
+  width: 652px;
+  height: 38px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 140.4%;
+  text-align: center;
+  color: #e56135;
+  background: #ffffff;
+  border: 0.7px dashed #a9aeb8;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+.ApllyButton {
+  color: #02b875;
+}
+.userDetails {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.userinfo,
+.userShareOptions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userName {
+  width: 125px;
+  height: 24px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  margin-left: 10px;
+  color: #000000;
+}
+.userViews {
+  width: 69px;
+  height: 18px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #525252;
+  margin-left: 9px;
+  margin-right: 40px;
+}
+.Share_userShareOptions {
+  padding: 10.5px;
+  background: #edeef0;
+  border-radius: 2px;
+}
+.locationSection {
+  width: 243px;
+  border: none;
+  margin-top: 28px;
+}
+.locationLine {
+  width: 243px;
+  border: 1px solid #e0e0e0;
+}
+.locationDiscription {
+  display: flex;
+  margin-top: 33px;
+}
+.locationDiscription img {
+  height: 13.33px;
+  width: 13.33px;
+  margin-right: 8px;
+}
+.locationDiscription p {
+  width: 220px;
+  height: 32px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  opacity: 0.5;
+}
+.locationDetails {
+  display: flex;
+  margin-bottom: 11px;
+  align-items: end;
+  width: 100%;
+}
+.locationDetails p {
+  width: 77px;
+  height: 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 0px;
+  margin-left: 4px;
+}
+.penImg_locationDetails {
+  margin-left: auto;
+}
+.locationDetails img {
+  height: 18px;
+  width: 18px;
+}
+
+/* ------Form-------- */
+.hidden {
+  display: none;
+}
+#formBackLayer {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 2;
+}
+.View {
+  display: block;
+  position: absolute;
+  width: 736px;
+  height: 513px;
+  background-color: #f2f2f2;
+  z-index: 3;
+  left: 50%; /* Move the div 50% from the left */
+  top: 52%; /* Move the div 50% from the top */
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.SiginupView {
+  display: block;
+  position: absolute;
+  width: 736px;
+  height: 457px;
+  background-color: #f2f2f2;
+  z-index: 3;
+  left: 50%; /* Move the div 50% from the left */
+  top: 52%; /* Move the div 50% from the top */
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.formalert {
+  width: 736px;
+  height: 50px;
+  background: #effff4;
+  border-radius: 8px 8px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formalert p {
+  color: #008a45;
+  margin: 17px;
+}
+.form-Section {
+  display: flex;
+}
+.LeftSide__Form {
+  width: 50%;
+  height: 100%;
+}
+.LeftSide__Form h1 {
+  width: 173px;
+  height: 31px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+  margin-top: 24px;
+  margin-left: 36px;
+  margin-bottom: 24px;
+}
+.RightSide__Form {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  /* background-color: #008a45; */
+}
+.Signup_Form {
+  width: 320px;
+  height: 320px;
+  margin-top: 31px;
+  margin-left: 26px;
+}
+
+.fields {
+  margin-left: 36px;
+}
+
+#pass {
+  position: relative;
+}
+.form_field .eyebutton {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  height: 17px;
+  width: 17px;
+  /* margin: auto 10px; */
+}
+.form_field_half {
+  width: 160px;
+  border: 1px solid #d9d9db;
+  background: #f7f8fa;
+  padding-left: 12px;
+}
+.pl2 {
+  padding-left: 12px;
+}
+.form_field {
+  display: flex;
+  width: 320px;
+  height: 46px;
+  background: #f7f8fa;
+  border: 1px solid #d9d9db;
+  border-radius: 2px 2px 0px 0px;
+  /* padding-left: 12px; */
+}
+.createButton {
+  width: 320px;
+  height: 40px;
+  background: #2f6ce5;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 36px;
+  margin-top: 19px;
+
+  border: none;
+}
+
+.facebookButton,
+.googleButton {
+  width: 320px;
+  height: 38px;
+  background: #ffffff;
+  border: 0.6px solid #d9d9db;
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  margin-left: 36px;
+  margin-top: 8px;
+}
+.forgotPassword {
+  width: 320px;
+  height: 38px;
+  background: #ffffff;
+  border: none;
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  margin-left: 36px;
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.008em;
+}
+.RightSide__Form h2 {
+  /* width: 195px; */
+  height: 17px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: right;
+  color: #3d3d3d;
+  margin-left: auto;
+  /* position: absolute; */
+  /* right: 36px; */
+  /* top: 31px; */
+  /* left: 20px; */
+  margin-right: 36px;
+  margin-top: 31px;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+}
+.RightSide__Form h2 span {
+  color: #2f6ce5;
+}
+.RightSide__Form p {
+  width: 317px;
+  height: 16px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: -0.008em;
+  color: #000000;
+  opacity: 0.6;
+  margin-top: 12px;
+  margin-left: 26px;
+}
+
+.mobo_Nav,.moboToggleForm,
+.mobo_Postheader, .mobo-bannerHeader,.userName_mobo  {
+  display: none;
+}
+@media screen and (max-width: 1040px) {
+  
+  .navbar {
+    width: 100vw;
+    /* background-color: #02B875; */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .navSearch {
+    position: relative;
+    width: 270px;
+    left: 25%;
+    top: 2px;
+  }
+  .navSearch input {
+    width: 230px;
+    left: 40px;
+  }
+  .navButton {
+    position: relative;
+    right: 5%;
+    top: 2px;
+    left: 20%;
+    /* margin:auto; */
+  }
+  .arrow {
+    position: relative;
+    right: 20%;
+    top: 2px;
+    left: 6%;
+  }
+  .mobo-element {
+    display: none;
+  }
+  .Banner {
+    margin: 0px auto;
+  }
+  .BannerImage {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .BannerImage img {
+    width: 100%;
+  }
+  .locationSection{
+    display: none;
+  }
+
+  .allPosts {
+    margin: 0px auto;
+    width: 100vw;
+  }
+  .HeaderPosts,
+  .headerLine,
+  .postContainer {
+    width: 100vw;
+  }
+  .post {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+
+  /* --------Mobile css------------- */
+
+.mobo_Nav {
+  height: 24px;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+}
+.spaces {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 10px;
+  margin-top: 8px;
+}
+
+.spaces img:nth-child(2) {
+  margin: 0px 11px;
+}
+.mobo-bannerHeader {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  /* height: 28px; */
+  width: 100vw;
+  background-color: #000000;
+}
+.mobo-bannerHeader button {
+  height: 16px;
+  width: 16px;
+}
+
+.join-Group {
+  position: absolute;
+  right: 5%;
+  width: 76px;
+  height: 28px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+#mobo_date {
+  display: none;
+}
+  .navbar,
+  .HeaderPosts,
+  .headerLine {
+    display: none;
+  }
+  .mobo-element {
+    display: block;
+  }
+  .mobo-bannerHeader {
+    display: block;
+  }
+  .h3Banner {
+    width: 179px;
+    height: 22px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    margin-left: 0px;
+    left: 16px;
+    top: 164px;
+    z-index: 2;
+  }
+  .BannerImage img {
+    width: 100%;
+    height: 236px;
+    opacity: 0.9;
+    object-fit: cover;
+  }
+  .pBanner {
+    width: 218px;
+    height: 16px;
+    left: 16px;
+    top: 188px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    z-index: 2;
+  }
+  .card-text {
+    width: auto;
+  }
+  .visitButton,
+  .ApllyButton {
+    width: 98%;
+    margin-left: auto;
+    height: 34px;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 140.4%;
+  }
+  .card-img-top {
+    height: 120px;
+  }
+  .article {
+    height: 19px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .card-title {
+    height: 42px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .card-text {
+    height: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+  .userinfoimg {
+    width: 37px;
+    height: 37px;
+  }
+  .userShareOptions .feye {
+    display: none;
+  }
+  .userShareOptions h3 {
+    display: none;
+  }
+  .userinfo > h2 {
+    display: none;
+  }
+  .userName {
+    height: 17px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 0px;
+  }
+  .userViews {
+    height: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    margin-top: 0px;
+  }
+  .userName_mobo {
+    display: block;
+    text-align: left;
+    height: 33px;
+  }
+  .date {
+    height: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    width: 120px;
+  }
+  .location {
+    height: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+  }
+  .post {
+    height: auto;
+  }
+  #mobo_date {
+    display: inline-block;
+    width: 120px;
+  }
+  #datedesktop {
+    display: none;
+  }
+  .layer {
+    display: block;
+  }
+  .bLayer {
+    /* display: block; */
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    opacity: 0.9;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.45) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+  }
+  .mobo_Postheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 16px;
+  }
+  .mobo_Postheader h1 {
+    width: 73px;
+    height: 18px;
+    font-weight: bolder;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #212529;
+    margin: auto 0px;
+    font-family: "IBM Plex Sans";
+  }
+  .mobo_Postheader button {
+    height: 28px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+    color: #212529;
+    border: none;
+  }
+  .mobo_Postheader button img {
+    margin-left: 10px;
+  }
+  .Posts {
+    margin-top: 22px;
+  }
+  .postContainer {
+    margin-top: 26px;
+  }
+  .moboToggleForm {
+    display: block;
+    position: fixed;
+    width: 54px;
+    height: 54px;
+    right: 18px;
+    top: 561px;
+    bottom: 28px;
+    z-index: 2;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #ff5c5c 0%, #f0568a 100%);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18), 0px 0px 2px rgba(0, 0, 0, 0.08);
+  }
+  .moboSignup__Form {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 462px;
+    left: 0px;
+    top: 178px;
+    background: #ffffff;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 8px 8px 0px 0px;
+    z-index: 4;
+  }
+  .moboSignup__Form .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 22px 20px;
+  }
+  .moboSignup__Form h1 {
+    width: 130px;
+    height: 23px;
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .moboSignup__Form .fields {
+    margin: 20px 20px 0px 20px;
+  }
+  .moboSignup__Form .fields .form_field,
+  .form_field_half {
+    width: 100%;
+    height: 40px;
+  }
+  .createButton {
+    width: 150px;
+    height: 36px;
+    margin-left: 20px;
+    font-size: 13px;
+  }
+  .facebookButton,
+  .googleButton {
+    width: 89%;
+    margin: 0px 20px;
+    height: 36px;
+    margin-top: 12px;
+  }
+.moboforgotPassword{
+  border: none;
+  background-color: #ffffff;
+  margin-left:37%;
+  margin-top:10px;
+}
+  .facebookButton img,
+  .googleButton img {
+    width: 157px;
+    height: 16px;
+  }
+  .signupFormFooter {
+    width: 240px;
+    height: 32px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: -0.008em;
+    margin: 22px auto;
+  }
+  .mobo_signinButton{
+height: 17px;
+border: none;
+background-color: #ffffff;
+  }
+  .Switch_options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobo_signinButton a{
+    color: #495057;
+    font-size: 13px;
+    margin-right: 20px;
+  }
+ 
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <nav class="navbar position-relative justify-content-evenly">
+        <div class="navlogo ">
+            <a class="navbar-brand" href="#">
+                <img src="assets/nav/whole.png" alt="" width="163" height="24" />
+            </a>
+        </div>
+        <div class="navSearch rounded-pill">
+            <img src="assets/nav/Vector.png" class="navSearchIcon position-absolute" />
+            <input type="text" placeholder="Search for your favorite groups in ATG" />
+        </div>
+        <Button class="navButton" id="toggleForm">
+            Create account. <span class="navSpan">It’s free!</span>
+        </Button>
+        <img src="assets/nav/Vector (2).png" height="5" width="10" class="arrow" />
+    </nav>
+
+    <!-- ------------------Mobo Navbar------------------------------ -->
+    <nav class="mobo_Nav mobo-element">
+        <div class="spaces">
+            <img src="assets/mobo_Images/Rectangle.png" alt="">
+            <img src="assets/mobo_Images/Oval.png" alt="">
+            <img src="assets/mobo_Images/Path.png" alt="">
+        </div>
+    </nav>
+
+    <!-- -----------------------Mobo toogle Form Button---------- -->
+    <button id="mobo_ToggleForm" class="moboToggleForm"><img src="assets/mobo_Images/edit_24px_outlined.png"
+            alt=""></button>
+    <!-- ---------------------Mobo signup Form-------------- -->
+    <div id="MoboSign-up" class=" hidden">
+        <div class="heading">
+            <h1>Create Account</h1>
+            <img src="assets/mobo_Images/Vector (10).png" alt="" height="20" width="20" class="close">
+        </div>
+        <div class="fields">
+            <div class="form_field">
+                <input class="form_field_half" type="text" placeholder="First Name">
+                <input class="form_field_half" type="text" placeholder="Last Name">
+            </div>
+
+            <input class="form_field pl2" type="mail" placeholder="Email">
+            <div class="form_field" id="pass">
+                <input class="form_field pl2 bordernone" type="password" placeholder="Password">
+                <img class="eyebutton" src="assets/form/Group 3 (1).png" alt="">
+            </div>
+            <input class="form_field pl2" type="password" placeholder="Confirm Password">
+
+        </div>
+        <div class="Switch_options">
+            <button class="createButton">Create Account</button>
+            <button id="mobo_SwitchToSignIn" class="mobo_signinButton"><a href="#">or Sign In</a></button>
+        </div>
+
+        <button class="facebookButton"> <img src="assets/form/Group 3 (3).png" /></button>
+        <button class="googleButton"> <img src="assets/form/Group.png" /></button>
+        <p class="signupFormFooter">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+    </div>
+
+    <!-- -----------------------------Mobo SignIn Form---------------------- -->
+    <div id="MoboSign-In" class=" hidden">
+        <div class="heading">
+            <h1>Welcome back!</h1>
+            <img src="assets/mobo_Images/Vector (10).png" alt="" height="20" width="20" class="close">
+        </div>
+        <div class="fields">
+            <input class="form_field pl2" type="mail" placeholder="Email">
+            <div class="form_field" id="pass">
+                <input class="form_field pl2 bordernone" type="password" placeholder="Password">
+                <img class="eyebutton" src="assets/form/Group 3 (1).png" alt="">
+            </div>
+        </div>
+        <div class="Switch_options">
+            <button class="createButton">Sign In</button>
+            <button id="mobo_SwitchToSignUp" class="mobo_signinButton"><a href="#">or Create Account</a></button>
+        </div>
+
+        <button class="facebookButton"> <img src="assets/form/Group 3 (3).png" /></button>
+        <button class="googleButton"> <img src="assets/form/Group.png" /></button>
+        <button class="moboforgotPassword">Forgot Passowrd?</button>
+    </div>
+    <!-- ---Form----->
+    <div id="formBackLayer" class=" hidden"></div>
+    <form id="my-form" class="hidden">
+        <div class="formalert">
+            <p>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
+        </div>
+        <div class="form-Section">
+            <div class="LeftSide__Form">
+                <h1>Create Account</h1>
+                <div class="fields">
+                    <div class="form_field">
+                        <input class="form_field_half" type="text" placeholder="First Name">
+                        <input class="form_field_half" type="text" placeholder="Last Name">
+                    </div>
+
+                    <input class="form_field pl2" type="mail" placeholder="Email">
+                    <div class="form_field" id="pass">
+                        <input class="form_field pl2" type="password" placeholder="Password">
+                        <img class="eyebutton" src="assets/form/Group 3 (1).png" alt="">
+                    </div>
+                    <input class="form_field pl2" type="password" placeholder="Confirm Password">
+
+                </div>
+                <button class="createButton">Create Account</button>
+                <button class="facebookButton"> <img src="assets/form/Group 3 (3).png" /></button>
+                <button class="googleButton"> <img src="assets/form/Group.png" /></button>
+
+            </div>
+            <div class="RightSide__Form">
+                <h2 id="signButton">Already have an account? <span>Sign In<span></h2>
+                <img src="assets/form/Group 3.png" class="Signup_Form" />
+                <p>By signing up, you agree to our Terms & conditions, Privacy policy</p>
+            </div>
+        </div>
+    </form>
+    <!-- ------Signin Form----------- -->
+    <form id="signin-form" class="hidden">
+        <div class="formalert">
+            <p>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
+        </div>
+        <div class="form-Section">
+            <div class="LeftSide__Form">
+                <h1>SignIn</h1>
+                <div class="fields">
+                    <input class="form_field pl2" type="mail" placeholder="Email">
+                    <div class="form_field" id="pass">
+                        <input class="form_field pl2" type="password" placeholder="Password">
+                        <img class="eyebutton" src="assets/form/Group 3 (1).png" alt="">
+                    </div>
+                </div>
+                <button class="createButton">Sign In</button>
+                <button class="facebookButton"> <img src="assets/form/Group 3 (3).png" /></button>
+                <button class="googleButton"> <img src="assets/form/Group.png" /></button>
+                <button class="forgotPassword">Forgot Password</button>
+
+            </div>
+            <div class="RightSide__Form">
+                <h2 id="backToCreate">Dont have an account yet? <span>Create new for free!<span></h2>
+                <img src="assets/form/Group 3.png" class="Signup_Form" />
+            </div>
+        </div>
+    </form>
+
+
+
+    <!-- ----------Banner--------------- -->
+
+    <div class="Banner position-relative">
+        <div class="position-relative BannerImage">
+            <div class="layer position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50 bLayer"></div>
+            <img src="assets/banner/Rectangle 2.png" height="440" width="1440" />
+            <div class="mobo-bannerHeader">
+                <h2 class="join-Group">Join Group</h2>
+            </div>
+        </div>
+        <h3 class="h3Banner ">
+            Computer Engineering
+        </h3>
+        <p class="pBanner position-absolute">142,765 Computer Engineers follow this</p>
+        <div>
+
+            <!-- ----------------Posts Section------------------- -->
+            <div class="Posts position-relative">
+                <!-- -----------------Post Header-------------------- -->
+                <div class="HeaderPosts">
+                    <div class="leftSide">
+                        <div id="marker"></div>
+                        <a href="#" class="aBottomLine">All Posts(32)</a>
+                        <a href="#">Article</a>
+                        <a href="#">Event</a>
+                        <a href="#">Education</a>
+                        <a href="#">Job</a>
+                    </div>
+                    <div class="rightSide">
+                        <button class="postButton">Write a Post <img src="/assets/nav/Vector (2).png" /></button>
+                        <button class="joinButton"> <img src="assets/Posts/Vector (2).png" />Join Group</button>
+                    </div>
+                </div>
+                <div class="headerLine"></div>
+                <div class="mobo_Postheader">
+                    <h1>Posts(368)</h1>
+                    <button>Filter:All <img src="assets/nav/Vector (2).png" alt=""></button>
+                </div>
+                <!-- ------------------Post container-------------- -->
+                <div class="postContainer">
+                    <div class="allPosts">
+                        <!-- -------------Card 1------------- -->
+                        <div class="post card">
+                            <img src="assets/Posts/Rectangle 5.png" class="card-img-top" alt="..." height="220"
+                                width="692">
+                            <div class="card-body">
+                                <img src="assets/Posts/✍️ Article.png" class="article" />
+                                <div class="cardheading">
+                                    <h5 class="card-title">What if famous brands had regular fonts? Meet RegulaBrands!
+                                    </h5>
+                                    <button type="button" class="btn threedots" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img src="assets/Posts/Vector (7).png" height="10" width="20" />
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Report</a></li>
+                                        <li><a class="dropdown-item" href="#">Options 3</a></li>
+                                    </ul>
+                                </div>
+                                <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I
+                                    plan to rei…</p>
+                                <div class="userDetails">
+                                    <div class="userinfo">
+                                        <img src="assets/Posts/Rectangle 3.png" />
+                                        <h2 class="userName">Sarthak Kamra</h2>
+                                        <div class="userName_mobo">
+                                            <h2 class="userName">Sarthak Kamra</h2>
+                                            <h3 class="userViews">1.4k views</h3>
+                                        </div>
+                                    </div>
+                                    <div class="userShareOptions">
+                                        <img src="assets/Posts/visibility_24px.png" class="feye" />
+                                        <h3 class="userViews">1.4k views</h3>
+                                        <img src="assets/Posts/Vector (3).png" class="Share_userShareOptions" />
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -------------Card 2------------- -->
+
+                        <div class="post card">
+                            <img src="assets/Posts/Rectangle 5 (1).png" class="card-img-top" alt="..." height="220"
+                                width="692">
+                            <div class="card-body">
+                                <img src="assets/Posts/🔬️ Education.png" class="article" />
+                                <div class="cardheading">
+                                    <h5 class="card-title">Tax Benefits for Investment under National Pension Scheme
+                                        launched by Government
+                                    </h5>
+
+                                    <!-- <div class="btn-group"> -->
+                                    <button type="button" class="btn threedots" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img src="assets/Posts/Vector (7).png" height="10" width="20" />
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Report</a></li>
+                                        <li><a class="dropdown-item" href="#">Options 3</a></li>
+                                    </ul>
+                                    <!-- </div> -->
+                                </div>
+                                <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I
+                                    plan to rei…</p>
+                                <div class="userDetails">
+                                    <div class="userinfo">
+                                        <img src="assets/Posts/Rectangle 3 (1).png" />
+                                        <h2 class="userName">Sarah West</h2>
+                                        <div class="userName_mobo">
+                                            <h2 class="userName">Sarah West</h2>
+                                            <h3 class="userViews">4.8k views</h3>
+                                        </div>
+                                    </div>
+                                    <div class="userShareOptions">
+                                        <img src="assets/Posts/visibility_24px.png" class="feye" />
+                                        <h3 class="userViews">4.8k views</h3>
+                                        <img src="assets/Posts/Vector (3).png" class="Share_userShareOptions" />
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -------------Card 3------------- -->
+
+                        <div class="post card">
+                            <img src="assets/Posts/Rectangle 5 (2).png" class="card-img-top" alt="..." height="220"
+                                width="692">
+                            <div class="card-body">
+                                <img src="assets/Posts/🗓️ Meetup.png" class="article" />
+                                <div class="cardheading">
+                                    <h5 class="card-title">Finance & Investment Elite Social Mixer @Lujiazu
+                                    </h5>
+                                    <button type="button" class="btn threedots" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img src="assets/Posts/Vector (7).png" height="10" width="20" />
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Report</a></li>
+                                        <li><a class="dropdown-item" href="#">Options 3</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dateAndLocation">
+                                    <div class="date"><img src="assets/Posts/Vector (8).png" />Fri, 12 Oct, 2018</div>
+                                    <div class="location"><img src="assets/Posts/Vector (4).png" />Ahmedabad, India
+                                    </div>
+                                </div>
+                                <button class="visitButton">Vist Website</button>
+                                <div class="userDetails">
+                                    <div class="userinfo">
+                                        <img src="assets/Posts/Rectangle 3 (2).png" />
+                                        <h2 class="userName">Ronal Jones</h2>
+                                        <div class="userName_mobo">
+                                            <h2 class="userName">Ronal Jones</h2>
+                                            <h3 class="userViews">800 views</h3>
+                                        </div>
+                                    </div>
+                                    <div class="userShareOptions">
+                                        <img src="assets/Posts/visibility_24px.png" class="feye" />
+                                        <h3 class="userViews">800 views</h3>
+                                        <img src="assets/Posts/Vector (3).png" class="Share_userShareOptions" />
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -------------Card 4------------- -->
+
+                        <div class="post card withoutImageCard">
+
+                            <div class="card-body ">
+                                <img src="assets/Posts/💼️ Job.png" class="article" />
+                                <div class="cardheading">
+                                    <h5 class="card-title">Software Developer
+                                    </h5>
+                                    <button type="button" class="btn threedots" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img src="assets/Posts/Vector (7).png" height="10" width="20" />
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Report</a></li>
+                                        <li><a class="dropdown-item" href="#">Options 3</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dateAndLocation">
+                                    <div id="datedesktop" class="date"><img
+                                            src="assets/Posts/Vector (9).png" />Innovaccer Analytics
+                                        Private Ltd.</div>
+                                    <div id="mobo_date" class="date mobo_date"><img
+                                            src="assets/Posts/Vector (9).png" />Innovacce Anal...</div>
+                                    <div class="location"><img src="assets/Posts/Vector (4).png" />Noida, India</div>
+                                </div>
+                                <button class="ApllyButton">Apply on Timesjobs</button>
+                                <div class="userDetails">
+                                    <div class="userinfo">
+                                        <img src="assets/Posts/Rectangle 3 (3).png" />
+                                        <h2 class="userName">Joseph Gray</h2>
+                                        <div class="userName_mobo">
+                                            <h2 class="userName">Joseph Gray</h2>
+                                            <h3 class="userViews">1.7k views</h3>
+                                        </div>
+                                    </div>
+                                    <div class="userShareOptions">
+                                        <img src="assets/Posts/visibility_24px.png" class="feye" />
+                                        <h3 class="userViews">1.7k views</h3>
+                                        <img src="assets/Posts/Vector (3).png" class="Share_userShareOptions" />
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="locationSection">
+                        <div class="locationDetails ">
+                            <img src="assets/Posts/Vector (4).png" />
+                            <p>Noida, India</p>
+                            <img src="assets/Posts/Vector (5).png" class="penImg_locationDetails" />
+
+                        </div>
+                        <div class="locationLine">
+                        </div>
+                        <div class="locationDiscription">
+                            <img src="assets/Posts/Vector (6).png" />
+                            <p>Your location will help us serve better and extend a personalised experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="js/bootstrap.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous"></script>
+                <script src="index.js"></script>
+            
+</body>
+
+</html>
