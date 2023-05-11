@@ -642,6 +642,11 @@ section {
   }
 }
 
+#MoboSign-up{
+  /* transform: translateX(-50%); */
+  animation: slide-up 450ms ease-in-out;
+}
+
 @media screen and (max-width: 740px) {
 
   /* --------Mobile css------------- */
@@ -993,4 +998,14 @@ background-color: #ffffff;
  .mobo_backarrow img {
   filter: invert(100%);
 }
+}
+
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
