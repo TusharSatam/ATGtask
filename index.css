@@ -575,7 +575,7 @@ section {
 }
 
 .mobo_Nav,.moboToggleForm,
-.mobo_Postheader, .mobo-bannerHeader,.userName_mobo  {
+.mobo_Postheader, .mobo-bannerHeader,.userName_mobo,.mobo_backarrow  {
   display: none;
 }
 @media screen and (max-width: 1040px) {
@@ -722,7 +722,7 @@ section {
     z-index: 2;
   }
   .BannerImage img {
-    width: 100%;
+    width: 100vw;
     height: 236px;
     opacity: 0.9;
     object-fit: cover;
@@ -980,5 +980,17 @@ background-color: #ffffff;
     font-size: 13px;
     margin-right: 20px;
   }
- 
+ .mobo_backarrow{
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 3;
+  background-color: transparent;
+  border:none;
+  
+ }
+ .mobo_backarrow img {
+  filter: invert(100%);
+}
 }
